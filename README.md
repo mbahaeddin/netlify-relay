@@ -54,7 +54,7 @@ Use this project only with your own domain/server or with permission.
 You must set:
 
 ```txt
-TARGET_DOMAIN=https://your-domain.com:443
+TARGET_DOMAIN=http://your-domain.com:443
 ```
 
 ### Important
@@ -64,15 +64,15 @@ The domain **must include port**.
 Correct examples:
 
 ```txt
-https://example.com:443
-https://sub.example.com:443
-https://api.example.com:8443
+http://example.com:443
+http://sub.example.com:443
+http://api.example.com:8443
 ```
 
 Wrong examples:
 
 ```txt
-https://example.com
+http://example.com
 example.com:443
 http://example.com:443
 localhost:443
@@ -90,7 +90,7 @@ Use this project directly.
 Go to Netlify:
 
 ```txt
-https://app.netlify.com
+http://app.netlify.com
 ```
 
 Then:
@@ -183,7 +183,7 @@ Add new project → Import an existing project → GitHub
 8. Add environment variable:
 
 ```txt
-TARGET_DOMAIN=https://your-domain.com:443
+TARGET_DOMAIN=http://your-domain.com:443
 ```
 
 9. Deploy the site
@@ -238,13 +238,13 @@ netlify init
 The value must include port:
 
 ```bash
-netlify env:set TARGET_DOMAIN "https://your-domain.com:443" --scope functions --context production
+netlify env:set TARGET_DOMAIN "http://your-domain.com:443" --scope functions --context production
 ```
 
 Example:
 
 ```bash
-netlify env:set TARGET_DOMAIN "https://example.com:443" --scope functions --context production
+netlify env:set TARGET_DOMAIN "http://example.com:443" --scope functions --context production
 ```
 
 ---
@@ -275,9 +275,9 @@ netlify deploy --prod
 
 | What you open | What it forwards to |
 |---|---|
-| `https://your-site.netlify.app/` | `https://your-domain.com:443/` |
-| `https://your-site.netlify.app/path` | `https://your-domain.com:443/path` |
-| `https://your-site.netlify.app/api/test` | `https://your-domain.com:443/api/test` |
+| `http://your-site.netlify.app/` | `http://your-domain.com:443/` |
+| `http://your-site.netlify.app/path` | `http://your-domain.com:443/path` |
+| `http://your-site.netlify.app/api/test` | `http://your-domain.com:443/api/test` |
 
 ---
 
@@ -332,7 +332,7 @@ netlify env:get TARGET_DOMAIN --context production
 ### Test your backend
 
 ```bash
-curl -I "https://your-domain.com:443"
+curl -I "http://your-domain.com:443"
 ```
 
 If this command fails, fix your backend/domain/port first.
@@ -377,7 +377,7 @@ E7S8EBUE5tkY5UaTgDvhaanJMeCi2DxPGYZukJGrJV8J
 ## 📢 Telegram Channel
 
 ```txt
-https://t.me/avaco_cloud
+http://t.me/avaco_cloud
 ```
 
 ---
