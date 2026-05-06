@@ -54,7 +54,7 @@ Use this project only with your own domain/server or with permission.
 You must set:
 
 ```txt
-TARGET_DOMAIN=https://your-domain.com:443
+TARGET_DOMAIN=http://your-domain.com:443
 ```
 
 ### Important
@@ -64,15 +64,15 @@ The domain **must include port**.
 Correct examples:
 
 ```txt
-https://example.com:443
-https://sub.example.com:443
-https://api.example.com:8443
+http://example.com:443
+http://sub.example.com:443
+http://api.example.com:8443
 ```
 
 Wrong examples:
 
 ```txt
-https://example.com
+http://example.com
 example.com:443
 http://example.com:443
 localhost:443
@@ -90,7 +90,7 @@ Use this project directly.
 Go to Netlify:
 
 ```txt
-https://app.netlify.com
+http://app.netlify.com
 ```
 
 Then:
@@ -126,13 +126,14 @@ Add:
 
 ```txt
 Key: TARGET_DOMAIN
-Value: https://your-domain.com:443
+Value: http://your-domain.com:443
 ```
 
 Example:
 
 ```txt
-TARGET_DOMAIN=https://example.com:443
+TARGET_DOMAIN=http
+://example.com:443
 ```
 
 ---
